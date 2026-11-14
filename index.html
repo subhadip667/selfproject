@@ -6,184 +6,50 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0" />
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
-    <link href="Content/bootstrap.css" rel="stylesheet" />
-    <script src="Scripts/jquery-3.4.1.js"></script>
-    <link href="Content/Registration.css" rel="stylesheet" />
+    <link href="Content/login.css" rel="stylesheet" />
+
+    <script src="Scripts/jquery-3.7.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
 </head>
 <body>
-    <div class="signup-container">
+    <div class="login-wrapper">
 
-        <div class="signup-card">
+        <div class="login-box">
 
-            <div class="signup-header">
-                <h2>Sign Up</h2>
-                <p>Please fill in this form to create an account!</p>
+            <div class="avatar">
+                <span class="glyphicon glyphicon-user"></span>
             </div>
 
-            <hr />
+            <div class="login-content">
 
-            <!-- Personal Details -->
-            <h4>Personal Details</h4>
+                <h3>Member Login</h3>
 
-            <div class="row">
-
-                <div class="col-sm-8">
-                    <div class="form-group">
-                        <label>Full Name</label>
-                        <input id="txtFullName" type="text" Class="form-control" placeholder="Full Name" />
-                    </div>
-
-                    <div class="form-group">
-                        <label>Mobile</label>
-                        <input id="txtMobile" type="text" Class="form-control" placeholder="Mobile Number" />
-                    </div>
-                </div>
-
-                <div class="col-sm-4">
-                    <label>Upload Photo</label>
-                    <div class="photo-box">
-                        <span>Photo</span>
-                        <!--<asp:FileUpload ID="FileUpload1" runat="server" />-->
-                        <img src="" alt="" />
-                    </div>
-                </div>
-
-            </div>
-
-            <hr />
-
-            <!-- Address Details -->
-            <h4>Address Details</h4>
-
-            <div class="form-group">
-                <label>Address</label>
-                <!--<asp:TextBox ID="txtAddress" runat="server"
-                             CssClass="form-control" placeholder="House / Street / Address" />-->
-            </div>
-
-            <div class="row">
-
-                <div class="col-sm-4 form-group">
-                    <label>District</label>
-                   
-                    <select id="Select1" Class="form-control" placeholder="District" >
-                        <option></option>
-                    </select>
-                </div>
-
-                <div class="col-sm-4 form-group">
-                    <label>Post Office</label>
-                   
-                    <select id="Select2" Class="form-control" placeholder="PostOffice">
-                        <option></option>
-                    </select>
-                </div>
-
-                <div class="col-sm-4 form-group">
-                    <label>Block/Municipality</label>
-                   
-                    <select id="Select3" Class="form-control" placeholder="Municipality">
-                        <option></option>
-                    </select>
-                </div>
-
-                <div class="col-sm-4 form-group">
-                    <label>Anchal/GP</label>
-                   
-                    <select id="Select4" Class="form-control" placeholder="Anchal">
-                        <option></option>
-                    </select>
-                </div>
-
-                <div class="col-sm-4 form-group">
-                    <label>Village Name</label>
-                   
-                    <select id="Select5" Class="form-control" placeholder="Village Name">
-                        <option></option>
-                    </select>
-                </div>
-
-                <div class="col-sm-4 form-group">
-                    <label>PIN Code</label>
-                   
-                    <input id="txtPin" type="text"  Class="form-control" placeholder="PIN Code" />
-                </div>
-
-                <div class="col-sm-6 form-group">
-                    <label>Landmark</label>
+                <div class="form-group">
                     
-                    <input id="txtLandmark" type="text" Class="form-control" placeholder="Landmark" />
+                    <input id="txtusername" type="text"  Class="form-control"
+                                 placeholder="Username" />
                 </div>
 
-                <div class="col-sm-6 form-group">
-                    <label>Date of Birth</label>
+                <div class="form-group">
                    
-                    <input id="txtDOB" type="text" Class="form-control" TextMode="Date" />
+                    <input id="txtpassword" type="text"  Class="form-control"
+                                 TextMode="Password"
+                                 placeholder="Password"/>
                 </div>
+
+                <div class="form-group">
+                    <input id="Submit1" type="submit" value="Registrattion/Sign In" Class="btn btn-login btn-block" onclick="window.location.href='Registration.html'" />
+                    <input id="Submit1" type="submit" value="Guest" Class="btn btn-login btn-block" Text="Guest" />
+                </div>
+
+                <!--<asp:Label ID="lblmsg"
+                           runat="server">
+                </asp:Label>-->
 
             </div>
 
-            <hr />
-
-            <!-- Professional Details -->
-            <h4>Professional Details</h4>
-
-            <div class="row">
-
-                <div class="col-sm-6 form-group">
-                    <label>I am Skilled at this Work</label>
-                   
-                    <select id="Select6" Class="form-control" >
-                        <option></option>
-                    </select>
-                </div>
-
-                <div class="col-sm-6 form-group">
-                    <label>Experience</label>
-                    <!--<asp:TextBox ID="txtExperience" runat="server"
-                                 CssClass="form-control" placeholder="Experience" />-->
-                    <input id="txtExperience" type="text" Class="form-control" placeholder="Experience" />
-
-                </div>
-
-                <div class="col-sm-12 form-group">
-                    <label>Adhar No</label>
-                   
-                    <input id="txtadhar" type="text" Class="form-control" placeholder="AdharNo" />
-                </div>
-
-            </div>
-
-            <!-- Signature -->
-            <div class="form-group">
-                <label>Upload Signature</label>
-                <!--<div class="signature-box">
-                    <asp:FileUpload ID="FileUpload2" runat="server" />
-                </div>-->
-                <input id="File1" type="file" />
-            </div>
-
-            <hr />
-
-            <div class="text-center">
-
-                <!--<asp:Button ID="BtnSave" runat="server"
-                Text="Registration"
-                CssClass="btn btn-success btn-register" />-->
-                <input id="Submit1" type="submit" value="submit" Class="btn btn-success btn-register"  />
-
-                <!--<asp:Button ID="BtnReset" runat="server"
-                            Text="Reset"
-                            CssClass="btn btn-default btn-reset"
-                            CausesValidation="false" />-->
-                <input id="Reset1" type="reset" value="reset"  Class="btn btn-default btn-reset"/>
-            </div>
-
-            <div class="login-link">
-                Already have an account?
-               
-                <a href="Login.html">Login here</a>
-
+            <div class="login-footer">
+                <a href="#">Forgot Password?</a>
             </div>
 
         </div>
