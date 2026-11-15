@@ -49,6 +49,23 @@ body {
     align-items: center;
     justify-content: center;
 }
+ .hero-text {
+        max-width: 300px;
+        padding: 20px;
+        color: #fff;
+        margin-left: 88px;
+    }
+
+        .hero-text h1 {
+            font-size: 25px;
+            /*margin-left: 200px;*/
+        }
+
+        .hero-text h2 {
+            font-size: 30px;
+            margin: 8px -100px;
+        }
+
 
     .avatar span {
         font-size: 55px;
