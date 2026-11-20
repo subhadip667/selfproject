@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -9,6 +9,47 @@
     <link href="Content/bootstrap.css" rel="stylesheet" />
     <script src="Scripts/jquery-3.4.1.js"></script>
     <link href="Content/Searchservice.css" rel="stylesheet" />
+    <script>
+        $(document).ready(function () {
+
+            //$("#myPreference").click(function (e) {
+            //    e.preventDefault();
+
+            //    $(".product-section").toggle();
+            //});
+
+            $("#myPreference").click(function (e) {
+                e.preventDefault();
+
+                $(".product-section").show();
+            });
+
+            $("#myhome").click(function (e) {
+                e.preventDefault();
+
+                $(".product-section").hide();
+            });
+
+            $("#mywallet").click(function (e) {
+                e.preventDefault();
+
+                $(".product-section").hide();
+            });
+
+            $("#mymessage").click(function (e) {
+                e.preventDefault();
+
+                $(".product-section").hide();
+            });
+
+            $("#myprofile").click(function (e) {
+                e.preventDefault();
+
+                $(".product-section").hide();
+            });
+
+        });
+    </script>
 </head>
 <body>
     <!-- Top Header -->
@@ -20,11 +61,11 @@
 
         <!-- Navigation -->
         <nav class="navbar">
-            <a href="#">Home</a>
-            <a href="#">My Wallet</a>
-            <a href="#">My Preference</a>
-            <a href="#">Message</a>
-            <a href="#">My Profile</a>
+            <a href="#" id="myhome">Home</a>
+            <a href="#" id="mywallet">My Wallet</a>
+            <a href="#" id="myPreference">My Preference</a>
+            <a href="#" id="mymessage">Message</a>
+            <a href="#" id="myprofile">My Profile</a>
         </nav>
 
         <!-- Search -->
@@ -33,52 +74,377 @@
             <button>Search</button>
         </div>
 
-        <!-- Categories -->
-        <!--<h3>Top Categories</h3>
+
+        <h3>Top Categories</h3>
 
         <div class="categories">
 
             <div class="category">
-                <span>💻</span>
-                <p>Electronics</p>
+                <span><img src="image/cart.jpg" /></span>
+                <p>Carpenter</p>
             </div>
 
             <div class="category">
-                <span>👕</span>
-                <p>Fashion</p>
+                <span><img src="image/electrician.png" /></span>
+                <p>Electrician</p>
             </div>
 
             <div class="category">
-                <span>🛋️</span>
-                <p>Home & Living</p>
+                <span><img src="image/teacher.jpg" /></span>
+                <p>Private Tutor</p>
             </div>
 
             <div class="category">
-                <span>🧴</span>
-                <p>Beauty</p>
+                <span><img src="image/priest.jpg" /></span>
+                <p>Priest</p>
             </div>
 
             <div class="category">
-                <span>👟</span>
-                <p>Sports</p>
+                <span><img src="image/computer.png" /></span>
+                <p>
+                    computer
+                    technician
+                </p>
             </div>
 
             <div class="category">
-                <span>🧸</span>
-                <p>Toys</p>
+                <span><img src="image/plumber.png" /></span>
+                <p>Plumber</p>
             </div>
 
             <div class="category">
-                <span>📚</span>
-                <p>Books</p>
+                <span><img src="image/hairdresser.jpg" /></span>
+                <p>Beautician </p>
             </div>
 
             <div class="category">
-                <span>🛒</span>
-                <p>Grocery</p>
+                <span><img src="image/painter.jpg" /></span>
+                <p>Painter</p>
             </div>
 
-        </div>-->
+        </div>
+
+        <div class="product-section">
+
+            <h3>Populer Service Provider</h3>
+
+            <div class="product-grid">
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <!--<span class="badge-new">New</span>
+                <span class="discount-badge">20% OFF</span>-->
+
+                        <img src="photo/pp.jpg">
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-name">Name:-Sanju Das</p>
+                        <p class="product-name">Skill:-Plumber</p>
+                        <p class="product-name">Phone:-8767656543</p>
+
+                        <!--<span class="old-price">₹1,999</span>
+    <span class="new-price">₹1,599</span>-->
+
+                        <span class="wishlist">&#9825;</span>
+
+                    </div>
+
+                </div>
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <!--<span class="badge-new">New</span>
+                <span class="discount-badge">20% OFF</span>-->
+
+                        <img src="photo/ee.jpg">
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-name">Name:-Arjun Das</p>
+                        <p class="product-name">Skill:-Electrician</p>
+                        <p class="product-name">Phone:-8767656543</p>
+
+                        <!--<span class="old-price">₹1,999</span>
+    <span class="new-price">₹1,599</span>-->
+
+                        <span class="wishlist">&#9825;</span>
+
+                    </div>
+
+                </div>
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <!--<span class="badge-new">New</span>
+                <span class="discount-badge">20% OFF</span>-->
+
+                        <img src="photo/tt.jpg">
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-name">Name:-Puja Purohit</p>
+                        <p class="product-name">Skill:-Teacher</p>
+                        <p class="product-name">Phone:-8767656543</p>
+
+                        <!--<span class="old-price">₹1,999</span>
+    <span class="new-price">₹1,599</span>-->
+
+                        <span class="wishlist">&#9825;</span>
+
+                    </div>
+
+                </div>
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <!--<span class="badge-new">New</span>
+                <span class="discount-badge">20% OFF</span>-->
+
+                        <img src="photo/pp1.jpg">
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-name">Name:-Anil jana</p>
+                        <p class="product-name">Skill:-Plumber</p>
+                        <p class="product-name">Phone:-8767656543</p>
+
+                        <!--<span class="old-price">₹1,999</span>
+    <span class="new-price">₹1,599</span>
+
+    <span class="wishlist">&#9825;</span>-->
+
+                    </div>
+
+                </div>
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <!--<span class="badge-new">New</span>
+                <span class="discount-badge">20% OFF</span>-->
+
+                        <img src="photo/painter.jpg">
+
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-name">Name:-Samarjit Sen</p>
+                        <p class="product-name">Skill:-Painter</p>
+                        <p class="product-name">Phone:-8767656543</p>
+
+                        <!--<span class="old-price">₹1,999</span>
+    <span class="new-price">₹1,599</span>
+
+    <span class="wishlist">&#9825;</span>-->
+
+                    </div>
+
+                </div>
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <!--<span class="badge-new">New</span>
+                <span class="discount-badge">20% OFF</span>-->
+
+                        <img src="photo/tt1.jpg">
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-name">Name:-Tumpa Das</p>
+                        <p class="product-name">Skill:-Teacher</p>
+                        <p class="product-name">Phone:-8767656543</p>
+
+                        <!--<span class="old-price">₹1,999</span>
+    <span class="new-price">₹1,599</span>
+
+    <span class="wishlist">&#9825;</span>-->
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="product-grid">
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <!--<span class="badge-new">New</span>
+                <span class="discount-badge">20% OFF</span>-->
+
+                        <img src="photo/priest.jpg">
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-name">Name:-Ajit Phari</p>
+                        <p class="product-name">Skill:-Priest</p>
+                        <p class="product-name">Phone:-8767656543</p>
+
+                        <!--<span class="old-price">₹1,999</span>
+    <span class="new-price">₹1,599</span>-->
+
+                        <span class="wishlist">&#9825;</span>
+
+                    </div>
+
+                </div>
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <!--<span class="badge-new">New</span>
+                <span class="discount-badge">20% OFF</span>-->
+
+                        <img src="photo/car.jpg">
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-name">Name:-Gour</p>
+                        <p class="product-name">Skill:-Carpainter</p>
+                        <p class="product-name">Phone:-8767656543</p>
+
+
+                        <!--<span class="old-price">₹1,999</span>
+    <span class="new-price">₹1,599</span>-->
+
+                        <span class="wishlist">&#9825;</span>
+
+                    </div>
+
+                </div>
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <!--<span class="badge-new">New</span>
+                <span class="discount-badge">20% OFF</span>-->
+
+                        <img src="photo/tt.jpg">
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-name">Name:-Rumpa</p>
+                        <p class="product-name">Skill:-Teacher</p>
+                        <p class="product-name">Phone:-8767656543</p>
+
+                        <!--<span class="old-price">₹1,999</span>
+    <span class="new-price">₹1,599</span>-->
+
+                        <span class="wishlist">&#9825;</span>
+
+                    </div>
+
+                </div>
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <!--<span class="badge-new">New</span>
+                <span class="discount-badge">20% OFF</span>-->
+
+                        <img src="photo/painter1.jpg">
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-name">Name:-Nitesh</p>
+                        <p class="product-name">Skill:-Painter</p>
+                        <p class="product-name">Phone:-8767656543</p>
+
+                        <!--<span class="old-price">₹1,999</span>
+    <span class="new-price">₹1,599</span>
+
+    <span class="wishlist">&#9825;</span>-->
+
+                    </div>
+
+                </div>
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <!--<span class="badge-new">New</span>
+                <span class="discount-badge">20% OFF</span>-->
+
+                        <img src="photo/painter.jpg">
+
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-name"></p>
+
+                        <!--<span class="old-price">₹1,999</span>
+                <span class="new-price">₹1,599</span>
+
+                <span class="wishlist">&#9825;</span>-->
+
+                    </div>
+
+                </div>
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <!--<span class="badge-new">New</span>
+                <span class="discount-badge">20% OFF</span>-->
+
+                        <img src="photo/tt1.jpg">
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-name"></p>
+
+                        <!--<span class="old-price">₹1,999</span>
+                <span class="new-price">₹1,599</span>
+
+                <span class="wishlist">&#9825;</span>-->
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
 
     </div>
 
